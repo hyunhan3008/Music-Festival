@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/javascripts/index.js"></script>
+
+  </head>
+  <body>
+    <h1><%= title %></h1>
+
+
+    <form id=“xForm" onsubmit="onSubmit()">
+        <p><label for='array'>Json Array of People:</label></p>
+        <p><textarea rows="4" cols="50" type="text" name="array_of_people" id="array_of_people" >
+            [{"firstname":"Mickey","lastname":"Mouse","year":"1900"}, {"firstname":"Minnie","lastname":"Mouse","year":"1908"}]
+        </textarea></p>
+        <input type="submit" name="g" value="Submit" id="g">
+    </form>
+  <div id="results" style="margin-top:30px"></div>
+
+  </body>
+</html>
